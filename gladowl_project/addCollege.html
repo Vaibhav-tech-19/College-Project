@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add College - Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+
+  <main>
+    <section id="add-college-form" class="card">
+      <h2>Add College</h2>
+      <form name="f1" method="POST" action="https://localhost/gladowl_project/insert-college.php">
+        <label for="college-name">College Name:</label>
+        <input type="text" id="college-name" name="collegeName" required>
+
+        <label for="college-location">Address:</label>
+        <input type="text" id="college-location" name="collegeLocation" required>
+
+        <label for="college-location">Contact Person Name:</label>
+        <input type="text" id="contact-person" name="ContactPerson" required>
+
+        <label for="college-location">College mail-id:</label>
+        <input type="email" id="contact-mail" name="ContactMail" required>
+
+        <div class="button-container">
+          <button type="submit">Submit</button>
+          <button type="button" onclick="goBack()">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
